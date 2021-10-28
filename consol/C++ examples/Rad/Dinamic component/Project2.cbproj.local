@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.252,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\Dinamic component\MainFormUnit.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.802,=C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.296,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=D:\Dinamic component\Project2PCH1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.144,=C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.252,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Dinamic component\MainFormUnit.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.508,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Project2.cbproj=D:\Dinamic component\Project2.cbproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.252,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\Dinamic component\MainFormUnit.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

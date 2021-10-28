@@ -1,0 +1,22 @@
+//Muallif : Ro'ziyev Shohzod
+//Sana : 12.02.2013
+//Maqsad : Uchta butun A, B va C butun sonlari berilgan.Jumlani rostlikka tekshiring: B soni A va B sonlarning orasida yotadi.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    bool g;
+
+    cout << "a = "; cin >> a;
+    cout << "b = "; cin >> b;
+    cout << "c = "; cin >> c;
+
+    g = (a < b && b < c);
+    cout << "A < B < C => " << g << endl;
+
+    return 0;
+}

@@ -1,0 +1,335 @@
+object GenerationForm: TGenerationForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Generation Form'
+  ClientHeight = 541
+  ClientWidth = 862
+  Fill.Color = xFF616161
+  Fill.Kind = Solid
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object And: TLabel
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 464.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 29.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'and'
+  end
+  object EnterMainKeys: TLabel
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 188.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'Choose two prime numbers'
+  end
+  object Generation: TButton
+    Position.X = 744.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Generate keys'
+    OnClick = GenerationClick
+  end
+  object Header: TLabel
+    Align = Top
+    StyledSettings = [Family, Style]
+    Size.Width = 862.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Center
+    Text = 'RSA encryption method'
+  end
+  object Prime1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 216.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Prime1'
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Prime2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 496.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Prime2'
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Step1: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 516.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      '1. Define n as the result of multiplying Prime1 on Prime2 (n = P' +
+      'rime1*Prime2) '
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step2: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 123.000000000000000000
+    Size.Width = 704.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    Text = 
+      '2. We choose a random number, which we call d. This number must ' +
+      'be relatively prime with multiplication (Prime1-1)*(Prime2-1)'
+    object FloatAnimation2: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step3: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 177.000000000000000000
+    Size.Width = 682.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      '3. We define a number e for which the following relation  (e*d) ' +
+      'mod ((Prime1-1)*(Prime2-1)) = 1 is true '
+    object FloatAnimation3: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step4: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 206.000000000000000000
+    Size.Width = 411.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = '4. We call the public key e and n, and the secret key - d and n'
+    object FloatAnimation4: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step5: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 238.000000000000000000
+    Size.Width = 480.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      'In order to encrypt data on the public key {e, n}, you need the ' +
+      'following:'
+    object FloatAnimation5: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step6: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 270.000000000000000000
+    Size.Width = 671.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      'Break the encrypted text into blocks, each of which can be repre' +
+      'sented as a number M(i) = 0,1,2...,n-1'
+    object FloatAnimation6: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step7: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 298.000000000000000000
+    Size.Width = 635.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      'Encrypt the text, considered as a sequens of number M(i) by the ' +
+      'formula C(i) = (M(i) ^ e) mod n'
+    object FloatAnimation7: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Timer: TTimer
+    Enabled = False
+    OnTimer = TimerTimer
+    Left = 760
+    Top = 176
+  end
+  object Step8: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 346.000000000000000000
+    Size.Width = 635.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      'Encrypt the text, considered as a sequens of number M(i) by the ' +
+      'formula C(i) = (M(i) ^ e) mod n'
+    object FloatAnimation8: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step9: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Opacity = 0.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 378.000000000000000000
+    Size.Width = 635.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 
+      'Encrypt the text, considered as a sequens of number M(i) by the ' +
+      'formula C(i) = (M(i) ^ e) mod n'
+    object FloatAnimation9: TFloatAnimation
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 640.000000000000000000
+    Position.Y = 8.000000000000000000
+    TextSettings.FontColor = claWhite
+    Text = 'Animation speed'
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Max = 1.000000000000000000
+    Min = 0.001000000047497451
+    Orientation = Horizontal
+    Position.X = 632.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Value = 0.001000000047497451
+    OnTracking = TrackBar1Tracking
+  end
+  object Button1: TButton
+    Position.X = 736.000000000000000000
+    Position.Y = 378.000000000000000000
+    TabOrder = 23
+    Text = 'Encypt'
+    Visible = False
+    OnClick = Button1Click
+  end
+end

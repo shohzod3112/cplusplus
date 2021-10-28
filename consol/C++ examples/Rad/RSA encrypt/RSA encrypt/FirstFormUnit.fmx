@@ -1,0 +1,46 @@
+object FirstForm: TFirstForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'RSA Encryption'
+  ClientHeight = 285
+  ClientWidth = 402
+  Fill.Color = xFF616161
+  Fill.Kind = Solid
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object EncryptDecrypt: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Generate keys'
+    OnClick = EncryptDecryptClick
+  end
+  object Decrypt: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Encrypt and Decrypt'
+    OnClick = DecryptClick
+  end
+  object Exit: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Exit'
+    OnClick = ExitClick
+  end
+end

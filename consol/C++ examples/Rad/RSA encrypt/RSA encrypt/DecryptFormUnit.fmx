@@ -1,0 +1,103 @@
+object DecryptForm: TDecryptForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 528
+  ClientWidth = 809
+  Fill.Color = xFF616161
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Header: TLabel
+    Align = Top
+    StyledSettings = [Family, Style]
+    Size.Width = 809.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Center
+    Text = 'RSA decryption method'
+  end
+  object EnterMainKeys: TLabel
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 141.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'Enter the secret keys'
+  end
+  object Key1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 176.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'd'
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object And: TLabel
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 424.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 29.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'and'
+  end
+  object Key2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 456.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'n'
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Generation: TButton
+    Position.X = 703.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Generate keys'
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Max = 1.000000000000000000
+    Min = 0.001000000047497451
+    Orientation = Horizontal
+    Position.X = 575.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 218.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    Value = 0.001000000047497451
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 640.000000000000000000
+    Position.Y = 8.000000000000000000
+    TextSettings.FontColor = claWhite
+    Text = 'Animation speed'
+  end
+end

@@ -1,0 +1,455 @@
+object EncryptionForm: TEncryptionForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Encryption Form'
+  ClientHeight = 573
+  ClientWidth = 1296
+  Fill.Color = xFF616161
+  Fill.Kind = Solid
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Header: TLabel
+    Align = Top
+    StyledSettings = [Family, Style]
+    Size.Width = 1296.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Center
+    Text = 'RSA encryption method'
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 1080.000000000000000000
+    Position.Y = 8.000000000000000000
+    TextSettings.FontColor = claWhite
+    Text = 'Animation speed'
+  end
+  object TrackBar1: TTrackBar
+    CanParentFocus = True
+    Max = 1.000000000000000000
+    Min = 0.001000000047497451
+    Orientation = Horizontal
+    Position.X = 1024.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 30
+    Value = 0.001000000047497451
+    OnTracking = TrackBar1Tracking
+  end
+  object Encrypt: TButton
+    Tag = 3
+    Position.X = 1187.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    Text = 'Encrypt'
+    OnClick = EncryptClick
+    object FloatAnimation10: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step8: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 16.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 230.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'Enter the text you want to encrypt'
+    object FloatAnimation8: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Step9: TEdit
+    Tag = 2
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 22
+    MaxLength = 40
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 249.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 920.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    object FloatAnimation9: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object StringGrid1: TStringGrid
+    Position.X = 17.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 1263.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines]
+    RowCount = 100
+    RowHeight = 21.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    Viewport.Width = 1259.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  object E: TEdit
+    Tag = 2
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 21
+    MaxLength = 40
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 249.000000000000000000
+    Position.Y = 101.000000000000000000
+    Size.Width = 224.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object N: TEdit
+    Tag = 2
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    MaxLength = 40
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 481.000000000000000000
+    Position.Y = 101.000000000000000000
+    Size.Width = 216.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    object FloatAnimation2: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Label2: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 96.000000000000000000
+    Position.Y = 102.000000000000000000
+    Size.Width = 142.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'Enter the public keys'
+    object FloatAnimation3: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Pointer: TRectangle
+    Fill.Color = x96FF3535
+    Position.X = 17.000000000000000000
+    Position.Y = 201.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object FloatAnimation11: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Position.X'
+      StartValue = 0.000000000000000000
+      StartFromCurrent = True
+      StopValue = 0.000000000000000000
+    end
+  end
+  object Process: TLabel
+    StyledSettings = [Family, Style]
+    Margins.Left = 25.000000000000000000
+    Margins.Top = 140.000000000000000000
+    Margins.Right = 25.000000000000000000
+    Position.X = 17.000000000000000000
+    Position.Y = 234.000000000000000000
+    Size.Width = 784.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    Text = 'Process'
+    object ProcessAnimation: TFloatAnimation
+      Duration = 1.000000000000000000
+      OnFinish = ProcessAnimationFinish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+    object FloatAnimation4: TFloatAnimation
+      Delay = 1.000000000000000000
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation4Finish
+      PropertyName = 'Opacity'
+      StartValue = 1.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+  object Label3: TLabel
+    Align = Top
+    StyledSettings = [Family, Style]
+    Position.Y = 57.000000000000000000
+    Size.Width = 1296.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Center
+    Text = 'Encryption'
+  end
+  object Label4: TLabel
+    StyledSettings = [Family, Style]
+    Position.X = 224.000000000000000000
+    Position.Y = 297.000000000000000000
+    Size.Width = 809.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Center
+    Text = 'Encryption'
+  end
+  object Label5: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 96.000000000000000000
+    Position.Y = 334.000000000000000000
+    Size.Width = 147.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'Enter the private keys'
+    object FloatAnimation5: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object D: TEdit
+    Tag = 2
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 20
+    MaxLength = 40
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 249.000000000000000000
+    Position.Y = 333.000000000000000000
+    Size.Width = 224.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    object FloatAnimation6: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object N1: TEdit
+    Tag = 2
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    MaxLength = 40
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 481.000000000000000000
+    Position.Y = 333.000000000000000000
+    Size.Width = 216.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+    object FloatAnimation7: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Label6: TLabel
+    Tag = 1
+    AutoSize = True
+    StyledSettings = [Family, Style]
+    Position.X = 16.000000000000000000
+    Position.Y = 382.000000000000000000
+    Size.Width = 231.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    TextSettings.WordWrap = False
+    Text = 'Enter the text you want to decrypt'
+    object FloatAnimation12: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Text: TEdit
+    Tag = 2
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    MaxLength = 100
+    TextSettings.Font.Size = 15.000000000000000000
+    Position.X = 249.000000000000000000
+    Position.Y = 381.000000000000000000
+    Size.Width = 936.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '13,15,16,17'
+    StyledSettings = [Family, Style, FontColor]
+    object FloatAnimation13: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object Decrypt: TButton
+    Tag = 3
+    Position.X = 1195.000000000000000000
+    Position.Y = 381.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = 'Decrypt'
+    OnClick = DecryptClick
+    object FloatAnimation14: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+  object StringGrid2: TStringGrid
+    Position.X = 16.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 1269.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines]
+    RowCount = 100
+    RowHeight = 21.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    Viewport.Width = 1265.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  object Process2: TLabel
+    StyledSettings = [Family, Style]
+    Margins.Left = 25.000000000000000000
+    Margins.Top = 140.000000000000000000
+    Margins.Right = 25.000000000000000000
+    Position.X = 17.000000000000000000
+    Position.Y = 470.000000000000000000
+    Size.Width = 784.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claWhite
+    Text = 'Process'
+    object FloatAnimation15: TFloatAnimation
+      Duration = 1.000000000000000000
+      OnFinish = FloatAnimation15Finish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+    object FloatAnimation16: TFloatAnimation
+      Delay = 1.000000000000000000
+      Duration = 0.200000002980232200
+      OnFinish = FloatAnimation16Finish
+      PropertyName = 'Opacity'
+      StartValue = 1.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+  object Pointer2: TRectangle
+    Fill.Color = x96FF3535
+    Position.X = 17.000000000000000000
+    Position.Y = 433.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object FloatAnimation17: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Position.X'
+      StartValue = 0.000000000000000000
+      StartFromCurrent = True
+      StopValue = 0.000000000000000000
+    end
+  end
+  object StringGrid3: TStringGrid
+    Position.X = 16.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 1265.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines]
+    RowCount = 100
+    RowHeight = 21.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    Viewport.Width = 1261.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  object StringGrid4: TStringGrid
+    Position.X = 16.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 1269.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Options = [ColumnResize, ColumnMove, ColLines, RowLines]
+    RowCount = 100
+    RowHeight = 21.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    Viewport.Width = 1265.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 1200.000000000000000000
+    Position.Y = 296.000000000000000000
+    TabOrder = 31
+    Text = 'Copy'
+    OnClick = Button1Click
+  end
+end

@@ -1,0 +1,2 @@
+2. (, ), {, }, [, ] qavslari kiritiladi, togri yoki hatoligini aniqlash kerak;
+3. a va b sonlaridan iborat jadval bor. birinchi qiymati bo'yicha agar birinchi qiymati teng bo'lib qolsa ikkinchi qiymati bo'yicha saralash kerak;

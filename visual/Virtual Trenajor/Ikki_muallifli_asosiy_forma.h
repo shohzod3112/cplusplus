@@ -1,0 +1,198 @@
+//---------------------------------------------------------------------------
+
+#ifndef Ikki_muallifli_asosiy_formaH
+#define Ikki_muallifli_asosiy_formaH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Buttons.hpp>
+#include <ComCtrls.hpp>
+#include <ExtCtrls.hpp>
+#include <Graphics.hpp>
+#include <jpeg.hpp>
+//---------------------------------------------------------------------------
+class TForm23 : public TForm
+{
+__published:	// IDE-managed Components
+	TScrollBox *ScrollBox1;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
+	TLabel *Label5;
+	TLabel *Label6;
+	TLabel *Label7;
+	TLabel *Label8;
+	TLabel *Label9;
+	TLabel *Label10;
+	TLabel *Label11;
+	TLabel *Label12;
+	TLabel *Label13;
+	TLabel *Label14;
+	TLabel *Label15;
+	TLabel *Label16;
+	TLabel *Label17;
+	TLabel *Label18;
+	TLabel *Label19;
+	TLabel *Label20;
+	TLabel *Label21;
+	TLabel *Label22;
+	TLabel *Label23;
+	TLabel *Label24;
+	TLabel *Label25;
+	TLabel *Label26;
+	TLabel *Label27;
+	TLabel *Label28;
+	TLabel *Label29;
+	TLabel *Label30;
+	TLabel *Label31;
+	TLabel *Label32;
+	TLabel *Label33;
+	TLabel *Label34;
+	TLabel *Label35;
+	TLabel *Label36;
+	TLabel *Label37;
+	TLabel *Label38;
+	TLabel *Label39;
+	TLabel *Label40;
+	TLabel *Label41;
+	TLabel *Label42;
+	TLabel *Label44;
+	TImage *Image3;
+	TLabel *Label46;
+	TLabel *Label47;
+	TLabel *Label48;
+	TLabel *Label49;
+	TLabel *Label45;
+	TLabel *Label51;
+	TLabel *Label43;
+	TLabel *Label52;
+	TLabel *Label53;
+	TLabel *Label54;
+	TLabel *Label55;
+	TLabel *Label56;
+	TLabel *Label57;
+	TLabel *Label58;
+	TLabel *Label59;
+	TLabel *Label60;
+	TLabel *Label61;
+	TLabel *Label62;
+	TLabel *Label63;
+	TLabel *Label64;
+	TLabel *Label65;
+	TLabel *Label66;
+	TLabel *Label67;
+	TLabel *Label68;
+	TLabel *Label69;
+	TLabel *Label70;
+	TImage *Image5;
+	TSpeedButton *SpeedButton16;
+	TSpeedButton *SpeedButton17;
+	TSpeedButton *SpeedButton1;
+	TSpeedButton *SpeedButton18;
+	TSpeedButton *SpeedButton19;
+	TSpeedButton *SpeedButton2;
+	TSpeedButton *SpeedButton20;
+	TSpeedButton *SpeedButton3;
+	TSpeedButton *SpeedButton21;
+	TSpeedButton *SpeedButton4;
+	TSpeedButton *SpeedButton5;
+	TSpeedButton *SpeedButton22;
+	TSpeedButton *SpeedButton23;
+	TSpeedButton *SpeedButton12;
+	TSpeedButton *SpeedButton24;
+	TSpeedButton *SpeedButton25;
+	TSpeedButton *SpeedButton26;
+	TSpeedButton *SpeedButton27;
+	TSpeedButton *SpeedButton28;
+	TSpeedButton *SpeedButton6;
+	TSpeedButton *SpeedButton7;
+	TSpeedButton *SpeedButton8;
+	TSpeedButton *SpeedButton30;
+	TSpeedButton *SpeedButton31;
+	TSpeedButton *SpeedButton32;
+	TSpeedButton *SpeedButton33;
+	TSpeedButton *SpeedButton34;
+	TSpeedButton *SpeedButton35;
+	TSpeedButton *SpeedButton9;
+	TSpeedButton *SpeedButton15;
+	TSpeedButton *SpeedButton36;
+	TSpeedButton *SpeedButton37;
+	TSpeedButton *SpeedButton10;
+	TSpeedButton *SpeedButton38;
+	TSpeedButton *SpeedButton39;
+	TSpeedButton *SpeedButton11;
+	TSpeedButton *SpeedButton40;
+	TSpeedButton *SpeedButton13;
+	TSpeedButton *SpeedButton41;
+	TSpeedButton *SpeedButton42;
+	TLabel *Label72;
+	TLabel *Label50;
+	TLabel *Label71;
+	TSpeedButton *SpeedButton48;
+	TLabel *Label73;
+	TSpeedButton *SpeedButton29;
+	TEdit *Edit9;
+	TEdit *Edit10;
+	TEdit *Edit11;
+	TEdit *Edit12;
+	TEdit *Edit13;
+	TComboBox *ComboBox1;
+	TEdit *Edit14;
+	TEdit *Edit15;
+	TEdit *Edit2;
+	TEdit *Edit16;
+	TEdit *Edit17;
+	TEdit *Edit3;
+	TEdit *Edit18;
+	TEdit *Edit4;
+	TEdit *Edit19;
+	TEdit *Edit20;
+	TEdit *Edit21;
+	TEdit *Edit22;
+	TEdit *Edit23;
+	TEdit *Edit24;
+	TEdit *Edit25;
+	TMemo *Memo1;
+	TEdit *Edit26;
+	TEdit *Edit27;
+	TEdit *Edit8;
+	TEdit *Edit28;
+	TEdit *Edit5;
+	TComboBox *ComboBox2;
+	TEdit *Edit6;
+	TComboBox *ComboBox3;
+	TButton *Button4;
+	TComboBox *ComboBox4;
+	TComboBox *ComboBox5;
+	TButton *Button1;
+	TButton *Button2;
+	TButton *Button3;
+	TPanel *Panel1;
+	TImage *Image1;
+	TSpeedButton *SpeedButton14;
+	TSpeedButton *SpeedButton43;
+	TSpeedButton *SpeedButton44;
+	TSpeedButton *SpeedButton45;
+	TSpeedButton *SpeedButton46;
+	TSpeedButton *SpeedButton47;
+	TImage *Image2;
+	TLabel *Label74;
+	TComboBox *ComboBox8;
+	TComboBox *ComboBox6;
+	TComboBox *ComboBox7;
+	TEdit *Edit7;
+	TStatusBar *StatusBar1;
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall ComboBox8Change(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm23(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm23 *Form23;
+//---------------------------------------------------------------------------
+#endif

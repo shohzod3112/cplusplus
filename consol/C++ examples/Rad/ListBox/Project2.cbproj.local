@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.904,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\ListBox\MainForm.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.349,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Project2.cbproj=D:\ListBox\Project2.cbproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.904,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\ListBox\MainForm.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.655,=C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.799,=D:\ListBox\File1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.221,D:\ListBox\File1.h=D:\ListBox\MyItemClass.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.892,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=D:\ListBox\Project2PCH1.h</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.383,=C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.737,D:\ListBox\MainForm.cpp=D:\ListBox\MainFormUnit.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.737,D:\ListBox\MainForm.fmx=D:\ListBox\MainFormUnit.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.904,C:\Users\QAREKEN\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\ListBox\MainForm.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.686,=D:\ListBox\File1.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.622,D:\ListBox\File1.cpp=D:\ListBox\MyItemClass.cpp</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.737,D:\ListBox\MainForm.h=D:\ListBox\MainFormUnit.h</Transaction>
+  </Transactions>
+</BorlandProject>

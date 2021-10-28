@@ -1,0 +1,8 @@
+Funksiya turlari
+1. Parametli 
+	int sum (int, float) // QIYMAT QAYTARADI
+	void sum (double, int, float *)	//QIYMAT QAYTARMAYDI 
+
+2. Parametrsiz
+	int sum () // QIYMAT QAYTARADI
+	void sum () // QIYMAT QAYTARMAYDI
